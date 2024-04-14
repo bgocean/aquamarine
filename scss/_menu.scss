@@ -1,0 +1,36 @@
+.menu {
+  margin-top: 56px;
+  display: flex;
+  background-color: #f6f7f8;
+  border-radius: 25px;
+}
+.menu__list {
+  margin: 35px 50px;
+  display: flex;
+  gap: 64px;
+}
+.menu__list-item {
+}
+.menu__list-link {
+  font-family: $ral;
+  font-weight: 600;
+  font-size: 18px;
+  color: #464646;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid $blue;
+  }
+}
+select {
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  outline: none;
+  border: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 15px;
+  color: #000;
+  cursor: pointer;
+}

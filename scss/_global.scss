@@ -1,0 +1,27 @@
+$ral: "Raleway", sans-serif;
+$mon: "Montserrat", sans-serif;
+$white: #fff;
+$blue: #123093;
+$black: #000;
+
+body {
+  min-height: 100vh;
+  background-color: $white;
+  font-family: $ral;
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+}
+
+.container {
+  max-width: 1256px;
+  padding: 0 2px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-family: $ral;
+  font-weight: 800;
+  font-size: 48px;
+  color: $black;
+}

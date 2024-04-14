@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/icons/aqua-favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Aquamarine Clinic</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner" id="main">
+            <a class="logo" href="#">
+              <img class="logo__img" src="./img/icons/logo.svg" alt="Логотип" />
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#about">Про нас</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#specialists">Спеціалісти</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#medexam">Медкомісії</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#servises">Послуги</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#contacts">Контакти</a>
+                </li>
+                <li class="menu__list-item">
+                  <select class="lang-select" id="lang">
+                    <option value="ua" selected>UA</option>
+                    <option value="en">EN</option>
+                    <option value="ru">RU</option>
+                  </select>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="container">
+          <div class="header__content-inners">
+            <div class="header__content-text">
+              <h1 class="header__title">Медичний центр Aquamarine Clinic</h1>
+              <p class="header__subtitle">
+                Команда професійних діагностів та лаборантів. Наша практика
+                спрямована на глибоке дослідження і об'єктивні результати.
+              </p>
+              <button class="header__btn">Зв'язатись</button>
+            </div>
+            <div class="slider__wrapper">
+              <div class="header__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="header__content-img swiper-slide">
+                    <img src="./img/header-bg.jpg" alt="Лаборант" />
+                  </div>
+                  <div class="header__content-img swiper-slide">
+                    <img src="./img/header-bg.jpg" alt="Лаборант" />
+                  </div>
+                  <div class="header__content-img swiper-slide">
+                    <img src="./img/header-bg.jpg" alt="Лаборант" />
+                  </div>
+                  <div class="header__content-img swiper-slide">
+                    <img src="./img/header-bg.jpg" alt="Лаборант" />
+                  </div>
+                </div>
+                <div class="swiper-pagination img__pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="about">
+      <div class="container">
+        <h2 class="section__title" id="about">Про нас</h2>
+        <p class="about__text">
+          Наша клініка оснащена <b>сучасним</b> діагностичним та лабораторним
+          обладнанням, що дає можливість нашим клієнтам проходити медичну
+          комисію за <b>мінімально можливий час</b> зі збереженням
+          <b>медичної етики.</b>
+        </p>
+        <div class="about__license">
+          <div class="about__license-image">
+            <a class="pdf-link" href="./img/license-1.pdf">
+              <img src="./img/license-1.jpg" alt="Лицензия 1" />
+            </a>
+          </div>
+          <div class="about__license-image">
+            <a class="pdf-link" href="./img/license-2.pdf">
+              <img src="./img/license-2.jpg" alt="Лицензия 2" />
+            </a>
+          </div>
+          <div class="about__license-image">
+            <a class="pdf-link" href="./img/license-3.pdf">
+              <img src="./img/license-3.jpg" alt="Лицензия 3" />
+            </a>
+          </div>
+          <!--            -->
+          <div class="about__license-image">
+            <a class="pdf-link" href="./img/license-4.pdf">
+              <img src="./img/license-3.jpg" alt="Лицензия 4" />
+            </a>
+          </div>
+          <!--            -->         
+          <div class="pdf-modal" id="pdf-modal">
+            <div class="pdf-modal-content" id="pdf-modal-content">
+              <iframe id="pdf-iframe" width="800" height="600"></iframe>
+              <button id="close-pdf-modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/pdf.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
