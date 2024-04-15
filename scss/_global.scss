@@ -2,7 +2,10 @@ $ral: "Raleway", sans-serif;
 $mon: "Montserrat", sans-serif;
 $white: #fff;
 $blue: #123093;
+$lightblue: #e3ecf9;
 $black: #000;
+$grow: #5e5c5c;
+$black-opacity: rgba(0, 0, 0, 0.15);
 
 body {
   min-height: 100vh;
@@ -24,4 +27,9 @@ body {
   font-weight: 800;
   font-size: 48px;
   color: $black;
+}
+
+.text {
+  margin-top: 28px;
+  margin-bottom: 100px;
 }

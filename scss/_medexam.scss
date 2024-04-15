@@ -1,0 +1,19 @@
+.medexam {
+  background-color: $lightblue;
+}
+
+.medexam__content-iners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.medexam__content-text{
+  width: calc(50% - 64px);
+}
+
+.medexam__content-img img{
+  width: calc(50%-64px);
+  border-radius: 25px;  
+}
+

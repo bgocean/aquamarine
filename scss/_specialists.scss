@@ -1,0 +1,47 @@
+.specialists__text {
+  max-width: 650px;
+}
+
+
+.specialists__slider{
+    padding-bottom: 135px;
+    background-color: $white;
+}
+
+.specialists__wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.specialist__slide {
+  max-width: 356px;
+  max-height: 512px;
+  text-align: center;
+  overflow: hidden;  
+  border-radius: 40px;
+  border: 1px solid $black-opacity;
+  box-shadow: 1px 1px 4px 0 $black-opacity;
+}
+
+.slide__title {
+  margin: 16px 0 21px;
+  font-weight: 700;
+  font-size: 18px;
+  color: $black;
+}
+
+.slide__text {
+  max-width: 225px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 12px;
+//   text-wrap: balance;
+  color: $blue;
+}
+
+.slide__subtext {
+  margin: 12px 0 19px;
+  font-weight: 700;
+  font-size: 14px;
+  color: $grow;
+}
