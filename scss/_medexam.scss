@@ -1,19 +1,28 @@
 .medexam {
   background-color: $lightblue;
+  padding-bottom: 135px;
 }
 
-.medexam__content-iners {
+.medexam__content-inners {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
+  margin-top: 135px;
 }
 
-.medexam__content-text{
-  width: calc(50% - 64px);
+.medexam__content-text {
+  width: 50%;
 }
 
-.medexam__content-img img{
-  width: calc(50%-64px);
-  border-radius: 25px;  
+.medexam__content-text p {
+  margin-bottom: 28px;
 }
 
+.medexam__content-img img {
+  margin-top: 130px;
+  
+  width: 100%;
+  max-width: 800px;
+  border-radius: 30px;
+  overflow: hidden;
+}
