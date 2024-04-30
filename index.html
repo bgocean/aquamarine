@@ -35,7 +35,7 @@
                   <a class="menu__list-link" href="#medexam">Медкомісії</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#servises">Послуги</a>
+                  <a class="menu__list-link" href="#services">Послуги</a>
                 </li>
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="#contacts">Контакти</a>
@@ -126,8 +126,11 @@
       </div>
     </section>
     <section class="specialists">
+      <div class="slider__gradient">
+        <div class="swiper-button-next"></div>
+      </div>
       <div class="container">
-        <div class="section__title">Наші спеціалісти</div>
+        <div class="section__title" id="specialists">Наші спеціалісти</div>
         <p class="specialists__text text">
           В нашому центрі працюють тільки
           <b>висококваліфіковані</b> спеціалісти, готові у будь-який момент
@@ -136,7 +139,6 @@
         <div class="specialists__slider">
           <div class="specialists__swiper swiper-container">
             <div class="specialists__wrapper swiper-wrapper">
-
               <div class="specialist__slide swiper-slide">
                 <img src="./img/specialists/spets-1.jpg" alt="Специалист" />
                 <div class="slide__title">Чабанюк Тетяна Вікторівна</div>
@@ -187,10 +189,6 @@
                 </div>
                 <div class="slide__subtext">Стаж - 4 роки</div>
               </div>
-
-            </div>            
-            <div class="swiper-button-next">
-              <!-- <img class="slide-arrow" src="./img/icons/slide-arrow.svg" alt="Стрелка"> -->
             </div>
           </div>
         </div>
@@ -201,7 +199,7 @@
       <div class="container">
         <div class="medexam__content-inners">
           <div class="medexam__content-text">
-            <div class="section__title">Медкомісії</div>
+            <div class="section__title" id="medexam">Медкомісії</div>
             <p class="medexam__text text">
               Сертифікати, що видаються центром, визнані морськими
               адмiнiстрацiями країн <strong>Євросоюзу</strong>, які працюють пiд
@@ -219,6 +217,277 @@
           <div class="medexam__content-img">
             <img src="./img/medexam-bg.jpg" alt="Медкомісія" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section__title" id="services">Послуги</div>
+        <p class="servises__text text">
+          В нашому центрі працюють тільки висококваліфіковані спеціалісти,
+          готові у будь-який момент прийти на допомогу.
+        </p>
+        <div class="tabs__container">
+          <ul class="tabs">
+            <li class="tabs__item">
+              <div class="tabs__btn active" data-tab="#therapy">
+                Судинна терапія
+              </div>
+            </li>
+            <li class="tabs__item">
+              <div class="tabs__btn" data-tab="#massage">Масаж</div>
+            </li>
+            <li class="tabs__item">
+              <div class="tabs__btn" data-tab="#consultations">
+                Консультації
+              </div>
+            </li>
+            <li class="tabs__item">
+              <div class="tabs__btn" data-tab="#droppers">Крапельниці</div>
+            </li>
+          </ul>
+        </div>
+        <div class="services__sliders">
+          <div class="services__slider-block show" id="therapy">
+            <div class="services__slider swiper-container">
+              <div class="services__items swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-1.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-2.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-3.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-4.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-5.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-6.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-7.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-8.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of slide -->
+                <!-- start of slide -->
+                <div class="swiper-slide">
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-9.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-10.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-11.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-12.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-13.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                  <div class="services__item">
+                    <img
+                      src="./img/services/service-14.jpg"
+                      alt=""
+                      class="services__item-img"
+                    />
+                    <h5 class="services__item-title">
+                      Загальний масаж (60 хв.)
+                    </h5>
+                    <p class="services__item-price">&#8372; 1000</p>
+                    <button class="services__item-btn">Обрати</button>
+                    <button class="info-button">i</button>
+                    <div class="context-menu">
+                      <p>Додаткова інформація про послугу</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end of slide -->
+              </div>
+              <div class="services__pagination swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- end slider 1 -->
         </div>
       </div>
     </section>

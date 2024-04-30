@@ -2,10 +2,21 @@
   max-width: 650px;
 }
 
-// .specialists__slider {
-//   padding-bottom: 135px;
-//   background-color: $white;
-// }
+.specialists__slider {
+  position: relative;
+}
+
+.slider__gradient {
+  position: absolute;
+  width: 193px;
+  height: 514px;
+  border-radius: 40px;
+  right: 197px;
+  top: 2103px;
+  opacity: 0.8;
+  background: linear-gradient(90deg, #f6f7f8 0%, #fff 100%);
+  z-index: 3;
+}
 
 .specialists__wrapper {
   display: flex;
@@ -13,6 +24,9 @@
 }
 
 .specialist__slide {
+  display: flex; /* Добавляем flex-контейнер */
+  flex-direction: column; /* Устанавливаем направление столбцом */
+  justify-content: center; /* Выравниваем по центру по вертикали */
   max-width: 356px;
   max-height: 512px;
   text-align: center;
@@ -35,38 +49,29 @@
   font-weight: 700;
   font-size: 12px;
   //   text-wrap: balance;
-  color: $blue;
+  color: $green;
 }
 
 .slide__subtext {
-  margin: 12px 0 19px;
+  margin: 12px 0 24px;
   font-weight: 700;
   font-size: 14px;
   color: $grow;
 }
 
-// .slide__gradient {
-//   position: absolute;
-//   background: linear-gradient(90deg, #d9d9d9 0%, #737373 100%);
-//   z-index: -1; /* Помещаем градиент под слайдер */
-// }
-
-
-
 .swiper-button-next {
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  top: 45%;
+  right: 45%;
   width: 55px;
   height: 55px;
-  background-color: $blue;
+  background-color: $green;
   border-radius: 50%;
   font-size: 20px;
   line-height: 30px;
   text-align: center;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
   &::after {
     content: "";
     background-image: url("../img/icons/slide-arrow.svg");

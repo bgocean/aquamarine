@@ -1,0 +1,98 @@
+.servises__text {
+  max-width: 650px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs__container {
+  margin-bottom: 45px;
+}
+
+.tabs__item {
+  font-size: 20px;
+}
+
+.tabs__btn {
+  border: 2px solid $green;
+  border-radius: 40px;
+  margin-right: 20px;
+  background-color: $white;
+  padding: 14px 64px 16px;
+  font-family: $ral;
+  font-size: 20px;
+  font-weight: 700;
+  color: $green;
+  transition: 0.3s;
+  &:hover,
+  &.active {
+    background-color: $green;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.services__slider {
+  // display: flex;
+ 
+}
+
+.services__items {
+  
+  
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  
+}
+
+
+.services__item {  
+  height: 100%;
+  width: 100%;
+  margin-bottom: 35px;
+  // position: absolute;
+  // display: block;
+  max-width: 285px;
+  max-height: 480px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 1px solid $black-opacity;
+  box-shadow: 1px 1px 4px 0 $black-opacity;
+}
+
+.info-button {
+  position: relative;
+  background-color: $white;
+  color: $green;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid $green;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.context-menu {
+  display: none;
+  position: absolute;
+  bottom: 100px;
+  left: 140px; /* Изменяем отступ слева на 40px */
+  padding: 10px;
+  font-size: 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease; /* Добавляем плавный переход для прозрачности */
+}
+
+.info-button:hover + .context-menu {
+  display: block;
+  opacity: 1; /* При наведении меняем прозрачность на 1 */
+}
