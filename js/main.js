@@ -36,6 +36,10 @@ const swiperMenu = new Swiper(".services__slider", {
   slidesPerView: 1,
   slidesPerColumn: 1,
   speed: 800,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -73,4 +77,6 @@ function overflowTabs() {
     innerTabs.classList.remove("overflow");
   }
 }
+
+
 
